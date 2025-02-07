@@ -70,7 +70,7 @@ struct ContentView: View {
                             .shadow(radius: 3)
                         }
                     }
-                    .padding(.horizontal)
+                    .padding(.all)
                 }
                 .spotlightTarget(id: featuredProductsID)
                 
