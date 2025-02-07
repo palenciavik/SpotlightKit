@@ -1,5 +1,5 @@
 import Testing
-@testable import swift_spotlight
+@testable import SpotlightKit
 
 struct swift_spotlightTests {
 
