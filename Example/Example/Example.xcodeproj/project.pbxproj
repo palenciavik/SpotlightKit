@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D61DBCC62D8C13A5001417B4 /* SpotlightKit in Frameworks */ = {isa = PBXBuildFile; productRef = D61DBCC52D8C13A5001417B4 /* SpotlightKit */; };
+		D61DBCC92D8C1531001417B4 /* SpotlightKit in Frameworks */ = {isa = PBXBuildFile; productRef = D61DBCC82D8C1531001417B4 /* SpotlightKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D61DBCC62D8C13A5001417B4 /* SpotlightKit in Frameworks */,
+				D61DBCC92D8C1531001417B4 /* SpotlightKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +117,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				D61DBCC52D8C13A5001417B4 /* SpotlightKit */,
+				D61DBCC82D8C1531001417B4 /* SpotlightKit */,
 			);
 			productName = Example;
 			productReference = D61DBC7B2D8C064B001417B4 /* Example.app */;
@@ -202,7 +202,7 @@
 			mainGroup = D61DBC722D8C064B001417B4;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				D61DBCC42D8C13A5001417B4 /* XCRemoteSwiftPackageReference "SpotlightKit" */,
+				D61DBCC72D8C1531001417B4 /* XCRemoteSwiftPackageReference "SpotlightKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D61DBC7C2D8C064B001417B4 /* Products */;
@@ -569,20 +569,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D61DBCC42D8C13A5001417B4 /* XCRemoteSwiftPackageReference "SpotlightKit" */ = {
+		D61DBCC72D8C1531001417B4 /* XCRemoteSwiftPackageReference "SpotlightKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/palenciavik/SpotlightKit";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = exactVersion;
+				version = 1.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D61DBCC52D8C13A5001417B4 /* SpotlightKit */ = {
+		D61DBCC82D8C1531001417B4 /* SpotlightKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D61DBCC42D8C13A5001417B4 /* XCRemoteSwiftPackageReference "SpotlightKit" */;
+			package = D61DBCC72D8C1531001417B4 /* XCRemoteSwiftPackageReference "SpotlightKit" */;
 			productName = SpotlightKit;
 		};
 /* End XCSwiftPackageProductDependency section */

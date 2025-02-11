@@ -31,7 +31,7 @@ public struct SpotlightTargetPreferenceKey: PreferenceKey {
     public typealias Value = [UUID: CGRect]
     public static var defaultValue: [UUID: CGRect] = [:]
     
-    static func reduce(value: inout [UUID: CGRect], nextValue: () -> [UUID: CGRect]) {
+    public static func reduce(value: inout [UUID: CGRect], nextValue: () -> [UUID: CGRect]) {
         value.merge(nextValue(), uniquingKeysWith: { $1 })
     }
 }

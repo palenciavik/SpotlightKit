@@ -19,6 +19,16 @@ public struct SpotlightOverlay: View {
     let onNext: () -> Void
 
     let tooltipPosition: Tooltip.TooltipPosition
+    
+    public init(targetFrame: CGRect,
+                message: String,
+                onNext: @escaping () -> Void,
+                tooltipPosition: Tooltip.TooltipPosition) {
+        self.targetFrame = targetFrame
+        self.message = message
+        self.onNext = onNext
+        self.tooltipPosition = tooltipPosition
+    }
 
     @Environment(\.colorScheme) var colorScheme
 
