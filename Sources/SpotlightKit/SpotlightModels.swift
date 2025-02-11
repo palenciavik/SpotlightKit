@@ -1,7 +1,7 @@
 import SwiftUI
 
 public struct SpotlightStep: Identifiable {
-    let id: UUID
+    public let id: UUID
     let message: String
     let position: Tooltip.TooltipPosition
     

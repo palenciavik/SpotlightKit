@@ -4,6 +4,8 @@ public class SpotlightManager: ObservableObject {
     @Published var steps: [SpotlightStep] = []
     @Published var currentIndex: Int = 0
     
+    public init() { }
+    
     public var currentStep: SpotlightStep? {
         guard currentIndex < steps.count else { return nil }
         return steps[currentIndex]
@@ -26,8 +28,8 @@ public class SpotlightManager: ObservableObject {
 
 
 public struct SpotlightTargetPreferenceKey: PreferenceKey {
-    typealias Value = [UUID: CGRect]
-    static var defaultValue: [UUID: CGRect] = [:]
+    public typealias Value = [UUID: CGRect]
+    public static var defaultValue: [UUID: CGRect] = [:]
     
     static func reduce(value: inout [UUID: CGRect], nextValue: () -> [UUID: CGRect]) {
         value.merge(nextValue(), uniquingKeysWith: { $1 })
@@ -36,7 +38,12 @@ public struct SpotlightTargetPreferenceKey: PreferenceKey {
 
 public struct SpotlightTargetModifier: ViewModifier {
     let id: UUID
-    func body(content: Content) -> some View {
+    
+    public init(id: UUID) {
+        self.id = id
+    }
+    
+    public func body(content: Content) -> some View {
         content
             .background(
                 GeometryReader { proxy in
