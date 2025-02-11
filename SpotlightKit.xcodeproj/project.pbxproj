@@ -30,20 +30,47 @@
 		D64CAEAC2D84EBDB0067A0C1 /* SpotlightKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotlightKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D61DBC6B2D8C0107001417B4 /* Exceptions for "Tests" folder in "SpotlightKit" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SpotlightKit_Tests/SpotlightKit_Tests.swift,
+				SpotlightKit_UITests/SpotlightKit_UITests.swift,
+				SpotlightKit_UITests/SpotlightKit_UITestsLaunchTests.swift,
+			);
+			target = D64CAE912D84EBD90067A0C1 /* SpotlightKit */;
+		};
+		D61DBC6C2D8C0107001417B4 /* Exceptions for "Tests" folder in "SpotlightKitTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SpotlightKit_Tests/SpotlightKit_Tests.swift,
+			);
+			target = D64CAEA12D84EBDB0067A0C1 /* SpotlightKitTests */;
+		};
+		D61DBC6D2D8C0107001417B4 /* Exceptions for "Tests" folder in "SpotlightKitUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SpotlightKit_UITests/SpotlightKit_UITests.swift,
+				SpotlightKit_UITests/SpotlightKit_UITestsLaunchTests.swift,
+			);
+			target = D64CAEAB2D84EBDB0067A0C1 /* SpotlightKitUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		D61DBC622D8C006E001417B4 /* Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D61DBC6B2D8C0107001417B4 /* Exceptions for "Tests" folder in "SpotlightKit" target */,
+				D61DBC6C2D8C0107001417B4 /* Exceptions for "Tests" folder in "SpotlightKitTests" target */,
+				D61DBC6D2D8C0107001417B4 /* Exceptions for "Tests" folder in "SpotlightKitUITests" target */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		D64CAE942D84EBD90067A0C1 /* Sources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		D64CAEA52D84EBDB0067A0C1 /* SpotlightKit_Tests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SpotlightKit_Tests;
-			sourceTree = "<group>";
-		};
-		D64CAEAF2D84EBDB0067A0C1 /* SpotlightKit_UITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SpotlightKit_UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,9 +103,8 @@
 		D64CAE892D84EBD90067A0C1 = {
 			isa = PBXGroup;
 			children = (
+				D61DBC622D8C006E001417B4 /* Tests */,
 				D64CAE942D84EBD90067A0C1 /* Sources */,
-				D64CAEA52D84EBDB0067A0C1 /* SpotlightKit_Tests */,
-				D64CAEAF2D84EBDB0067A0C1 /* SpotlightKit_UITests */,
 				D64CAE932D84EBD90067A0C1 /* Products */,
 				D648B4E42D8A9F7200A5BD84 /* Package.swift */,
 			);
@@ -110,6 +136,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				D61DBC622D8C006E001417B4 /* Tests */,
 				D64CAE942D84EBD90067A0C1 /* Sources */,
 			);
 			name = SpotlightKit;
@@ -132,9 +159,6 @@
 			dependencies = (
 				D64CAEA42D84EBDB0067A0C1 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				D64CAEA52D84EBDB0067A0C1 /* SpotlightKit_Tests */,
-			);
 			name = SpotlightKitTests;
 			packageProductDependencies = (
 			);
@@ -154,9 +178,6 @@
 			);
 			dependencies = (
 				D64CAEAE2D84EBDB0067A0C1 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D64CAEAF2D84EBDB0067A0C1 /* SpotlightKit_UITests */,
 			);
 			name = SpotlightKitUITests;
 			packageProductDependencies = (
