@@ -15,8 +15,8 @@ struct SpotlightMaskShape: Shape {
 
 public struct SpotlightOverlay: View {
     let targetFrame: CGRect
-    let message: String
-    let onNext: () -> Void
+    public let message: String
+    public let onNext: () -> Void
 
     let tooltipPosition: Tooltip.TooltipPosition
     
