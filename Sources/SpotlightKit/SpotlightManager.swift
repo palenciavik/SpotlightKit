@@ -25,7 +25,7 @@ public class SpotlightManager: ObservableObject {
 }
 
 
-struct SpotlightTargetPreferenceKey: PreferenceKey {
+public struct SpotlightTargetPreferenceKey: PreferenceKey {
     typealias Value = [UUID: CGRect]
     static var defaultValue: [UUID: CGRect] = [:]
     
@@ -34,7 +34,7 @@ struct SpotlightTargetPreferenceKey: PreferenceKey {
     }
 }
 
-struct SpotlightTargetModifier: ViewModifier {
+public struct SpotlightTargetModifier: ViewModifier {
     let id: UUID
     func body(content: Content) -> some View {
         content
