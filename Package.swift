@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "SpotlightKit",
     platforms: [
-        .iOS(.v14)
+        .iOS(.v15)
     ],
     products: [
         .library(
