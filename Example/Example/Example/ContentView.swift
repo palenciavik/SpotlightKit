@@ -1,4 +1,5 @@
 import SwiftUI
+import SpotlightKit
 
 struct ContentView: View {
     @StateObject var spotlightManager = SpotlightManager()

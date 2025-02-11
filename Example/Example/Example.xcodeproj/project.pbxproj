@@ -195,6 +195,9 @@
 			);
 			mainGroup = D61DBC722D8C064B001417B4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D61DBCA92D8C0CD2001417B4 /* XCRemoteSwiftPackageReference "SpotlightKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D61DBC7C2D8C064B001417B4 /* Products */;
 			projectDirPath = "";
@@ -558,6 +561,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D61DBCA92D8C0CD2001417B4 /* XCRemoteSwiftPackageReference "SpotlightKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/palenciavik/SpotlightKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = D61DBC732D8C064B001417B4 /* Project object */;
 }

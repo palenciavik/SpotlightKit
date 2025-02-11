@@ -7,3 +7,4 @@
 DerivedData/
 build/DS_Store
 SpotlightKit.xcodeproj/xcuserdata/frights.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+*.xcbkptlist

@@ -16,13 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "SpotlightKit",
-            path: "Sources/SpotlightKit"
-        ),
-        .testTarget(
-            name: "SpotlightKitTests",
-            dependencies: ["SpotlightKit"],
-            path: "Tests/SpotlightKitTests"
-        ),
+        )
     ]
 )
 
