@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		D61DBCC32D8C1144001417B4 /* SpotlightKit in Frameworks */ = {isa = PBXBuildFile; productRef = D61DBCC22D8C1144001417B4 /* SpotlightKit */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		D61DBC8C2D8C064E001417B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -56,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D61DBCC32D8C1144001417B4 /* SpotlightKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +112,6 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				D61DBCC22D8C1144001417B4 /* SpotlightKit */,
 			);
 			productName = Example;
 			productReference = D61DBC7B2D8C064B001417B4 /* Example.app */;
@@ -202,7 +196,6 @@
 			mainGroup = D61DBC722D8C064B001417B4;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				D61DBCC12D8C1144001417B4 /* XCRemoteSwiftPackageReference "SpotlightKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D61DBC7C2D8C064B001417B4 /* Products */;
@@ -567,25 +560,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		D61DBCC12D8C1144001417B4 /* XCRemoteSwiftPackageReference "SpotlightKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/palenciavik/SpotlightKit";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D61DBCC22D8C1144001417B4 /* SpotlightKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D61DBCC12D8C1144001417B4 /* XCRemoteSwiftPackageReference "SpotlightKit" */;
-			productName = SpotlightKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D61DBC732D8C064B001417B4 /* Project object */;
 }
