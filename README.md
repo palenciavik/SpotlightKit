@@ -12,14 +12,15 @@ SpotlightKit is a SwiftUI-based onboarding and spotlight component that highligh
 
 ### Swift Package Manager
 In Xcode, navigate to File > Add Package Dependencies...
+
 Enter the repository URL:
-[https://github.com/Aeastr/GlowGetter](https://github.com/palenciavik/SpotlightKit)
+[https://github.com/palenciavik/SpotlightKit](https://github.com/palenciavik/SpotlightKit)
 
 ## Example
 
 https://github.com/user-attachments/assets/759c5c38-cbda-4aae-bce7-e0f744caa122
 
-Check out the `Examples` directory of this repository.
+Check out the `Example` directory of this repository.
 
 ## Contributing
 
